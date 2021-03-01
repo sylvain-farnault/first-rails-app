@@ -1,0 +1,17 @@
+<h1>Contact</h1>
+
+
+<form action="/contact" method="get">
+  <input type="text" name="filter" placeholder="WHo are you looking for?" value='<%= params[:filter] %>'>
+  <input type="submit">
+
+</form>
+
+
+<ol>
+  <% @members.each do |member| %>
+    <li>
+      <%= member %>
+    </li>
+  <% end %>
+</ol>
